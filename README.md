@@ -1,51 +1,46 @@
-Gold Price History Project - Beginner Friendly Explanation
-This is a Java web scraping project that automatically collects gold price data from a website and saves it to an Excel file.
+# Gold Price History Extractor
 
-What This Project Does
-The program visits a gold price website (goodreturns.in) and:
+This repository contains code for extracting and analyzing gold rate history data in Chennai.
 
-Opens a web browser automatically
-Selects different dates (last 30 days)
-Extracts gold prices for different purities (24K, 22K, 18K)
-Saves all the data to an Excel file
-Key Components
-Project Structure
-pom.xml: Maven configuration file that manages project dependencies
-Main.java: Basic entry point (currently just shows "Hello World")
-GoldRateExtractor.java: The main program that does all the work
-Technologies Used
-Java 22: Modern Java version
-Selenium WebDriver: Controls web browsers automatically
-Apache POI: Creates and manages Excel files
-WebDriverManager: Automatically manages browser drivers
-How It Works (Step-by-Step)
-Browser Setup (Lines 41-52): Automatically sets up Firefox browser
-Excel Creation (Lines 60-72): Creates an Excel file with headers
-Date Range (Lines 78-85): Defines the last 30 days to collect data
-Data Collection Loop (Lines 91-169): For each date:
-Opens the calendar on the website
-Selects the specific date
-Extracts gold prices from the webpage
-Writes the data to Excel
-Save File (Lines 177-184): Saves the Excel file as "Chennai_Gold_Rates.xlsx"
-Cleanup (Lines 190-191): Closes the browser
-The Line You Pointed To (Line 52)
-java
-System.out.println("Step 1: Site has been opened");
-This is simply a console message that tells you the website has been successfully opened in the browser.
+## 📋 Overview
 
-Why This is Useful
-Data Collection: Automatically gathers historical gold price data
-Analysis: The Excel file can be used for price trend analysis
-Automation: Saves hours of manual data entry
-Learning: Great example of web scraping and automation
-This project demonstrates practical web automation skills that are valuable in data collection, testing, and business intelligence scenarios.
+The Gold Price History Extractor is a web automation and data processing application built with Java that scrapes gold price information and stores it in Excel format for historical analysis and tracking.
 
-Feedback submitted
+1. Opens a web browser automatically
+2. Selects different dates (last 30 days) or Selects the specific date
+3. Extracts gold prices for different purities (24K, 22K, 18K)
+4. Writes the data to Excel
+5. Save File (Lines 177-184): Saves the Excel file as "Chennai_Gold_Rates.xlsx"
 
 
+## 🛠️ Tech Stack
 
-Command Awaiting Approval
+- **Language**: Java 22
+- **Build Tool**: Maven
+- **Web Automation**: Selenium WebDriver 4.39.0
+- **Data Processing**: Apache POI 5.5.1
+- **WebDriver Management**: WebDriverManager 6.3.3
+- **IDE**: IntelliJ IDEA (based on project configuration)
+
+## 📦 Dependencies
+
+The project uses the following key dependencies:
+
+- **Selenium Java** (v4.39.0) - For web browser automation and web scraping
+- **Apache POI** (v5.5.1) - For reading and writing Excel files
+- **Apache POI OOXML** (v5.5.1) - For handling .xlsx format Excel files
+- **WebDriverManager** (v6.3.3) - For automatic WebDriver management
+
+All dependencies are managed through Maven as defined in `pom.xml`.
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Java 22 or higher
+- Maven 3.6+
+- Chrome/Chromium browser (for Selenium WebDriver)
+
 
 
 
