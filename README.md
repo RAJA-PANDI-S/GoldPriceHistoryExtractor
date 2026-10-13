@@ -1,4 +1,5 @@
-# Gold Price History Extractor
+# GoldPriceHistoryExtractor
+This repo contains code for Extracting the Gold Rate History in Chennai.
 
 This repository contains code for extracting and analyzing gold rate history data in Chennai.
 
