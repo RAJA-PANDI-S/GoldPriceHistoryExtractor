@@ -76,7 +76,9 @@ public class GoldRateExtractor {
         // =====================================================
 
         LocalDate endDate = LocalDate.now();          // Today
-        LocalDate startDate = endDate.minusDays(30); // Last 30 days
+        //LocalDate startDate = endDate.minusDays(30); // Last 30 days
+        LocalDate startDate = LocalDate.of(2026, 4, 1); // Jan 1, 2026
+
 
         // Format required for displaying date in Excel
         DateTimeFormatter displayDateFormat =
